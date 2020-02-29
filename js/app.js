@@ -1,3 +1,5 @@
+import '../node_modules/todomvc-app-css/index.css'
+import '../node_modules/todomvc-common/base.css'
 /*global app, $on */
 (function () {
 	'use strict';
