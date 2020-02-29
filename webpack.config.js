@@ -32,9 +32,10 @@ module.exports = {
                     options: {
                         publicPath: '/css/',
                         minimize: true
-                    },
+                    }
                 },
-                    'css-loader',],
+                    'css-loader',
+                    'postcss-loader',],
             },
         ],
     },
