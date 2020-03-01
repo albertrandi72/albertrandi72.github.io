@@ -81,7 +81,12 @@
 		callback = callback || function () { };
 
 		// Generate an ID
-		var newId = todos.length + 1
+		var newId = 0;
+		if (todos.length === 0) {
+			newId = 1
+		} else {
+			newId = todos[todos.length - 1].id + 1
+		}
 		// var newId = ""; 
 		// var charset = "0123456789";
 
