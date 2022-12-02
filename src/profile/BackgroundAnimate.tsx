@@ -1,5 +1,6 @@
 import { useEffect, useRef, useState } from "react";
 import NET from "vanta/dist/vanta.net.min";
+import profileImage from "./image.jpg";
 export default function () {
   const [vantaEffect, setVantaEffect] = useState<any>(null);
   const myRef = useRef(null);
@@ -25,9 +26,5 @@ export default function () {
       if (vantaEffect) vantaEffect.destroy();
     };
   }, [vantaEffect]);
-  return (
-    <>
-      <div ref={myRef}></div>
-    </>
-  );
+  return <div ref={myRef} className='h-80'></div>;
 }
