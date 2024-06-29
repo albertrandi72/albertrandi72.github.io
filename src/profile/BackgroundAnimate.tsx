@@ -26,5 +26,5 @@ export default function () {
       if (vantaEffect) vantaEffect.destroy();
     };
   }, [vantaEffect]);
-  return <div ref={myRef} className='h-80'></div>;
+  return <div ref={myRef} className='h-80' />;
 }
