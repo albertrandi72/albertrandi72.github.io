@@ -1,3 +1,257 @@
 .App {
   text-align: center;
 }
+
+#main-container {
+  height: calc(100vh);
+  width: 100%;
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: center;
+}
+div {
+  width: 100%;
+}
+
+#header-nav {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  width: 100%;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+.first-container {
+  transition: all 1s;
+  background-color: #222831;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+body {
+  position: relative;
+  margin: 0;
+  color: #EEEEEE;
+}
+
+nav > ul{
+  height: 40px;
+  align-content: center;
+  align-items: center;
+  list-style-type: none; 
+  padding: 0; 
+  margin: 0; 
+  display: flex;
+  justify-content: end;
+  gap: 8px;
+  font-size: 20px;
+}
+
+nav > ul > li > a {
+  text-decoration: none;
+  color: #EEEEEE;
+  padding: 2px 4px;
+}
+
+nav > ul > li > a:hover {
+  color: #00ADB5;
+}
+
+.section {
+  padding-top: 60px;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+h3{
+  margin: 8px 0 8px 0;
+  opacity: 0.8;
+}
+
+#location {
+  margin: 0 0 24 0;
+}
+
+p,h1,h2{
+  margin: 0;
+  font-weight: 700;
+}
+
+aside {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+#profile-image {
+  width: 50%;
+  object-fit: contain;
+  border-radius: 100%;
+}
+
+@media screen and (min-width: 768px) {
+  #profile-image {
+    width: 50%;
+    object-fit: contain;
+    border-radius: 100%;
+  }
+  #main-container {
+    flex-direction: row;
+    align-items: center;
+  }
+  #content > h1, h2, h3 {
+    text-align: left;
+  }
+  
+  #services-container {
+    display: flex;
+    flex-direction: row;
+    row-gap: 20px;
+    justify-content: center;
+    align-items: stretch;
+  }
+  .service-card{
+    flex: 1;
+  }
+  .card-container{
+    height: 100%;
+  }
+  .container-connect {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 20px;
+  }
+  .connect-item {
+    flex: 1;
+  }
+}
+#content {
+  text-align: center;
+  padding: 0 40px;
+}
+
+#description {
+  text-align: justify;
+  margin: 8px 0 8px 0;
+  opacity: 0.7;
+}
+
+header, main, footer, html, body {
+  position: relative;
+  width: 100vw;
+}
+
+
+.scrolled {
+  transition: all 1s;
+  background-color: #393E46;
+}
+
+#services {
+  color: #222831;
+}
+
+*, *:before, *:after {
+  -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box;
+}
+
+.title-section {
+  text-align: center;
+  font-weight: 700;
+}
+
+.services-container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+.service-card {
+  padding: 20px;
+  color: white;
+}
+
+.card-container {
+  background-color: #393E46;
+  border-radius: 20px;
+  padding: 20px;
+  text-align: center;
+}
+
+.service-description {
+  text-align: justify;
+}
+
+#connect-container {
+  background-color: #D9E2C5;
+  padding: 16px;
+  padding-top: 40px;
+  padding-bottom: 100px;
+  color: black;
+}
+.text-left {
+  text-align: left;
+}
+
+.text-subtitle {
+  margin-top: 20px;
+  color: #6A6A6A;
+  font-weight: 600;
+}
+
+.icon-connect {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 100%;
+  background-color: white;
+  height: 50px;
+  width: 50px;
+  position: relative;
+}
+
+.icon-connect img {
+  width: 50%;
+  height: 50%;
+  object-fit: contain;
+}
+
+.connect-sub {
+  margin-top: 8px;
+  color: #6A6A6A;
+  font-size: smaller;
+  font-weight: 400;
+}
+
+.connect-value {
+  margin-top: 8px;
+  color: black;
+  font-size: large;
+  font-weight: 600;
+}
+
+#container-connect {
+  display: flex;
+  flex-wrap: wrap;
+}
+#container-connect > div {
+  margin-top: 40px;
+}
+
+#connect-title {
+  margin-top: 40px;
+}
+
+.connect-item > a {
+  text-decoration: none;
+  color: #EEEEEE;
+}
+
+footer {
+  text-align: center;
+  color: #6A6A6A;
+  background-color: #D9E2C5;
+  padding: 20px 0;
+}
